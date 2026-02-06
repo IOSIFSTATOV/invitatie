@@ -1,0 +1,67 @@
+.container {
+  background-color: #edf5f7;
+  background: url('../../assets/images/img3.png') center repeat;
+  position: relative;
+  padding: 90px 0;
+}
+.unk {
+  opacity: 0.9;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  background: #edf5f7;
+}
+.contextWrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.row > div {
+  margin-bottom: -15px !important;
+  margin: auto !important;
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.contentWrapper {
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.content {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.content > h2 {
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 52px;
+  margin-bottom: 1px;
+  margin-top: 50px !important;
+}
+.content > h5 {
+  color: #c78665;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+  font-family: 'Hind', sans-serif;
+}

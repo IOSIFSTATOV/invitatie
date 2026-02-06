@@ -1,0 +1,122 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.contentWrapper {
+  max-width: 900px;
+  width: 100%;
+}
+
+.header {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.form {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+.field input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 6px;
+}
+
+.mainLabel {
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+}
+
+.presenceRow {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cardYes,
+.cardNo {
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 20px;
+  width: 320px;
+}
+
+.radioLine {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.yesText {
+  color: #4caf50;
+  font-size: 18px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.noText {
+  color: #f44336;
+  font-size: 18px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.numbers {
+  display: flex;
+  gap: 10px;
+}
+
+.numbers input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.message textarea {
+  width: 100%;
+  min-height: 90px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 8px;
+}
+
+.submitBtn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 16px;
+  font-size: 18px;
+  border-radius: 14px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submitBtn:hover {
+  background: #333;
+}
