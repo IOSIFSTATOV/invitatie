@@ -1,6 +1,6 @@
 import styles from './Confirmare.module.css'
 import { useState } from 'react'
-import emailjs from '@emailjs/browser' // или '@emailjs/browser', если ты используешь npm install @emailjs/browser
+import emailjs from '@emailjs/browser'
 
 const Confirmare = () => {
   const [form, setForm] = useState({
@@ -35,7 +35,7 @@ const Confirmare = () => {
         kids: '',
         message: '',
       })
-    } catch (err) {
+    } catch {
       alert('Eroare la trimitere ❌')
     }
   }
@@ -76,7 +76,13 @@ const Confirmare = () => {
 
           <label className={styles.mainLabel}>* Prezență:</label>
           <div className={styles.presenceRow}>
-            <div className={styles.cardYes}>
+            {/* Карточка Да */}
+            <div
+              className={styles.cardYes}
+              style={{
+                borderColor: form.attend === 'Da' ? '#4caf50' : '#eee',
+              }}
+            >
               <div className={styles.radioLine}>
                 <input
                   type="radio"
@@ -104,9 +110,27 @@ const Confirmare = () => {
                   onChange={handleChange}
                 />
               </div>
+
+              {/* Mesaj показываем, если выбрано Da */}
+              {form.attend === 'Da' && (
+                <div className={styles.message}>
+                  <textarea
+                    name="message"
+                    placeholder="Mesaj..."
+                    value={form.message}
+                    onChange={handleChange}
+                  />
+                </div>
+              )}
             </div>
 
-            <div className={styles.cardNo}>
+            {/* Карточка Nu */}
+            <div
+              className={styles.cardNo}
+              style={{
+                borderColor: form.attend === 'Nu' ? '#f44336' : '#eee',
+              }}
+            >
               <div className={styles.radioLine}>
                 <input
                   type="radio"
@@ -118,14 +142,17 @@ const Confirmare = () => {
                 <span className={styles.noText}>Nu vom fi prezenți</span>
               </div>
 
-              <div className={styles.message}>
-                <textarea
-                  name="message"
-                  placeholder="Mesaj..."
-                  value={form.message}
-                  onChange={handleChange}
-                />
-              </div>
+              {/* Mesaj показываем, если выбрано Nu */}
+              {form.attend === 'Nu' && (
+                <div className={styles.message}>
+                  <textarea
+                    name="message"
+                    placeholder="Mesaj..."
+                    value={form.message}
+                    onChange={handleChange}
+                  />
+                </div>
+              )}
             </div>
           </div>
 
