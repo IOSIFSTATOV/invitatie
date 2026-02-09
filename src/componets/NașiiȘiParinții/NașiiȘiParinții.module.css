@@ -1,67 +1,81 @@
 .container {
-  background-color: #edf5f7;
-  background: url('../../assets/images/img3.png') center repeat;
-  position: relative;
-  padding: 90px 0;
-}
-.unk {
-  opacity: 0.9;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  inset: 0;
-  background: #edf5f7;
-}
-.contextWrapper {
-  position: relative;
-  z-index: 2;
-  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Cardo', serif;
+}
+
+.header {
+  font-size: 36px;
+  color: #d0ac6c;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.quote {
+  font-size: 20px;
+  font-style: italic;
+  color: #111827;
+  margin-bottom: 50px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.columnsWrapper {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  background-color: #fff;
 }
 
 .row {
   display: flex;
+  justify-content: space-around;
+  gap: 20px;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
 }
 
-.row > div {
-  margin-bottom: -15px !important;
-  margin: auto !important;
-  flex: 0 0 50%;
-  max-width: 50%;
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+.column {
+  flex: 1;
+  min-width: 200px;
 }
 
-.contentWrapper {
-  text-align: center;
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.content {
-  padding-bottom: 10px;
-  text-align: center;
-}
-
-.content > h2 {
+.column h3 {
+  font-size: 18px;
+  color: #6b7080;
+  margin-bottom: 10px;
   font-weight: 700;
-  font-size: 41px;
-  line-height: 52px;
-  margin-bottom: 1px;
-  margin-top: 50px !important;
 }
-.content > h5 {
-  color: #c78665;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 4px;
-  letter-spacing: 0.5px;
-  font-family: 'Hind', sans-serif;
+
+.column p {
+  font-size: 20px;
+  color: #d0ac6c;
+  margin: 5px 0;
+}
+
+.footerQuote {
+  font-size: 20px;
+  font-style: italic;
+  color: #111827;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    font-size: 28px;
+  }
+  .quote,
+  .footerQuote {
+    font-size: 18px;
+  }
+  .row {
+    flex-direction: column;
+    gap: 30px;
+  }
 }

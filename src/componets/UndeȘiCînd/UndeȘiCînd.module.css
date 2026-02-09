@@ -29,7 +29,7 @@
   display: flex;
   gap: 30px;
   align-items: stretch; /* растягиваем элементы по высоте */
-  height: 80vh; /* 80% высоты окна */
+  height: 70vh; /* 80% высоты окна */
   min-height: 400px; /* минимальная высота */
 }
 
