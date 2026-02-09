@@ -43,6 +43,16 @@ const NavbarMenu = () => {
 
         <li>
           <Link
+            to="UndeȘiCînd"
+            smooth
+            duration={1000}
+            onClick={() => handleMenuItemClick('UndeȘiCînd')}
+          >
+            Unde Și Cînd
+          </Link>
+        </li>
+        <li>
+          <Link
             to="Confirmare"
             smooth
             duration={1000}
