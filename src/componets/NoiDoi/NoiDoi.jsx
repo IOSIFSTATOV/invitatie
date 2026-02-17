@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './NoiDoi.module.css'
-import bgImage from '../../assets/images/img5.jpg' // картинка на всю ширину экрана
+
+import imgEl from '../../assets/images/img5.jpg'
+import imgEa from '../../assets/images/img6.jpg'
 
 const NoiDoi = () => {
   return (
@@ -11,13 +13,14 @@ const NoiDoi = () => {
           <h2>El</h2>
           <h3>Trofim</h3>
           <p>
-            Serioasă dar cu capul în nori, devreme acasă dar party animal.
-            <br />
-            Și ghici ce.. mă mărit!
-            <br />
-            Aș fi foarte bucuroasă dacă vom putea marca acest eveniment
-            împreună!
+            El este energic, de încredere și aproape întotdeauna are dreptate
+            (cel puțin după părerea lui). Iubește libertatea, animalele și
+            visează la o casă mare cu vedere spre natură. Este un adevărat
+            visător și are un simț al umorului excelent.
           </p>
+
+          {/* Фото под блоком */}
+          <img src={imgEl} alt="El" className={styles.blockImage} />
         </div>
 
         {/* Блок 2 */}
@@ -25,19 +28,16 @@ const NoiDoi = () => {
           <h2>Ea</h2>
           <h3>Victoria</h3>
           <p>
-            Serioasă dar cu capul în nori, devreme acasă dar party animal.
+            Organizată, realistă și mereu cu un plan bine pus la punct.
             <br />
-            Și ghici ce.. mă mărit!
+            Are liste și soluții pentru orice situație.
             <br />
-            Aș fi foarte bucuroasă dacă vom putea marca acest eveniment
-            împreună!
+            În realitate, datorită lui, nimic nu merge exact după plan.
           </p>
-        </div>
-      </div>
 
-      {/* Картинка под блоками */}
-      <div className={styles.bottomImage}>
-        <img src={bgImage} alt="Background" />
+          {/* Фото под блоком */}
+          <img src={imgEa} alt="Ea" className={styles.blockImage} />
+        </div>
       </div>
     </div>
   )

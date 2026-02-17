@@ -4,11 +4,12 @@
 }
 
 body {
-  font-family: 'Hind', sans-serif;
+  font-family: 'Cardo', serif;
+
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 26px;
-  color: #818491;
+  color: #111827;
   text-align: left;
   background-color: #fff;
 }
@@ -20,11 +21,11 @@ input {
 }
 a {
   cursor: pointer;
-  color: #121f38;
+  color: #111827;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 40px;
   line-height: 72px;
 }
 h1,
@@ -35,8 +36,8 @@ h5,
 h6 {
   margin-bottom: 15px;
   font-weight: 600;
-  color: #121f38;
-  font-family: 'Cormorant', sans-serif;
+  color: #111827;
+  font-family: 'Cardo', serif;
 }
 .h1,
 h1 {

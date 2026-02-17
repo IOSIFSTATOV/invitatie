@@ -1,3 +1,9 @@
+/* фон по бокам страницы */
+.sectionBg {
+  width: 100%;
+  background: #556832; /* поменяй цвет */
+}
+
 .container {
   width: 100%;
   display: flex;
@@ -8,6 +14,13 @@
 .contentWrapper {
   max-width: 900px;
   width: 100%;
+  padding: 50px 40px;
+  max-width: 1280px;
+  background-image: url('../../assets/images/img3.jpg'); /* путь к картинке */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
 }
 
 .header {
@@ -103,9 +116,12 @@
   padding: 10px;
   margin-top: 8px;
 }
+.submitBtnWrapper {
+  text-align: center;
+}
 
 .submitBtn {
-  width: 100%;
+  width: 30%;
   margin-top: 30px;
   padding: 16px;
   font-size: 18px;

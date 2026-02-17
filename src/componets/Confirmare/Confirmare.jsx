@@ -41,127 +41,130 @@ const Confirmare = () => {
   }
 
   return (
-    <div className={styles.container}>
-      <div className={styles.contentWrapper}>
-        <div className={styles.header}>Vă rugăm să confirmați prezența</div>
+    <section className={styles.sectionBg}>
+      <div className={styles.container}>
+        <div className={styles.contentWrapper}>
+          <div className={styles.header}>Vă rugăm să confirmați prezența</div>
 
-        <form className={styles.form} onSubmit={sendEmail}>
-          <div className={styles.row}>
-            <div className={styles.field}>
-              <label>* Nume Prenume:</label>
-              <input
-                type="text"
-                name="name"
-                placeholder="ex. Rotaru Mihail și Elena"
-                value={form.name}
-                onChange={handleChange}
-                required
-              />
-            </div>
-
-            <div className={styles.field}>
-              <label>* Număr de contact:</label>
-              <input
-                type="tel"
-                name="phone"
-                placeholder="+373..."
-                value={form.phone}
-                onChange={handleChange}
-                required
-              />
-            </div>
-          </div>
-
-          <hr />
-
-          <label className={styles.mainLabel}>* Prezență:</label>
-          <div className={styles.presenceRow}>
-            {/* Карточка Да */}
-            <div
-              className={styles.cardYes}
-              style={{
-                borderColor: form.attend === 'Da' ? '#4caf50' : '#eee',
-              }}
-            >
-              <div className={styles.radioLine}>
+          <form className={styles.form} onSubmit={sendEmail}>
+            <div className={styles.row}>
+              <div className={styles.field}>
+                <label>* Nume Prenume:</label>
                 <input
-                  type="radio"
-                  name="attend"
-                  value="Da"
-                  checked={form.attend === 'Da'}
+                  type="text"
+                  name="name"
+                  placeholder="ex. Rotaru Mihail și Elena"
+                  value={form.name}
                   onChange={handleChange}
-                />
-                <span className={styles.yesText}>Da, vom fi prezenți</span>
-              </div>
-
-              <div className={styles.numbers}>
-                <input
-                  type="number"
-                  name="adults"
-                  placeholder="Adulți"
-                  value={form.adults}
-                  onChange={handleChange}
-                />
-                <input
-                  type="number"
-                  name="kids"
-                  placeholder="Copii"
-                  value={form.kids}
-                  onChange={handleChange}
+                  required
                 />
               </div>
 
-              {/* Mesaj показываем, если выбрано Da */}
-              {form.attend === 'Da' && (
-                <div className={styles.message}>
-                  <textarea
-                    name="message"
-                    placeholder="Mesaj..."
-                    value={form.message}
+              <div className={styles.field}>
+                <label>* Număr de contact:</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="+373..."
+                  value={form.phone}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+            </div>
+
+            <hr />
+
+            <label className={styles.mainLabel}>* Prezență:</label>
+            <div className={styles.presenceRow}>
+              {/* Карточка Да */}
+              <div
+                className={styles.cardYes}
+                style={{
+                  borderColor: form.attend === 'Da' ? '#4caf50' : '#eee',
+                }}
+              >
+                <div className={styles.radioLine}>
+                  <input
+                    type="radio"
+                    name="attend"
+                    value="Da"
+                    checked={form.attend === 'Da'}
+                    onChange={handleChange}
+                  />
+                  <span className={styles.yesText}>Da, vom fi prezenți</span>
+                </div>
+
+                <div className={styles.numbers}>
+                  <input
+                    type="number"
+                    name="adults"
+                    placeholder="Adulți"
+                    value={form.adults}
+                    onChange={handleChange}
+                  />
+                  <input
+                    type="number"
+                    name="kids"
+                    placeholder="Copii"
+                    value={form.kids}
                     onChange={handleChange}
                   />
                 </div>
-              )}
-            </div>
 
-            {/* Карточка Nu */}
-            <div
-              className={styles.cardNo}
-              style={{
-                borderColor: form.attend === 'Nu' ? '#f44336' : '#eee',
-              }}
-            >
-              <div className={styles.radioLine}>
-                <input
-                  type="radio"
-                  name="attend"
-                  value="Nu"
-                  checked={form.attend === 'Nu'}
-                  onChange={handleChange}
-                />
-                <span className={styles.noText}>Nu vom fi prezenți</span>
+                {/* Mesaj показываем, если выбрано Da */}
+                {form.attend === 'Da' && (
+                  <div className={styles.message}>
+                    <textarea
+                      name="message"
+                      placeholder="Mesaj..."
+                      value={form.message}
+                      onChange={handleChange}
+                    />
+                  </div>
+                )}
               </div>
 
-              {/* Mesaj показываем, если выбрано Nu */}
-              {form.attend === 'Nu' && (
-                <div className={styles.message}>
-                  <textarea
-                    name="message"
-                    placeholder="Mesaj..."
-                    value={form.message}
+              {/* Карточка Nu */}
+              <div
+                className={styles.cardNo}
+                style={{
+                  borderColor: form.attend === 'Nu' ? '#f44336' : '#eee',
+                }}
+              >
+                <div className={styles.radioLine}>
+                  <input
+                    type="radio"
+                    name="attend"
+                    value="Nu"
+                    checked={form.attend === 'Nu'}
                     onChange={handleChange}
                   />
+                  <span className={styles.noText}>Nu vom fi prezenți</span>
                 </div>
-              )}
-            </div>
-          </div>
 
-          <button type="submit" className={styles.submitBtn}>
-            Confirmați Prezența
-          </button>
-        </form>
+                {/* Mesaj показываем, если выбрано Nu */}
+                {form.attend === 'Nu' && (
+                  <div className={styles.message}>
+                    <textarea
+                      name="message"
+                      placeholder="Mesaj..."
+                      value={form.message}
+                      onChange={handleChange}
+                    />
+                  </div>
+                )}
+              </div>
+            </div>
+            <div className={styles.submitBtnWrapper}>
+              <button type="submit" className={styles.submitBtn}>
+                Confirmați Prezența
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
 

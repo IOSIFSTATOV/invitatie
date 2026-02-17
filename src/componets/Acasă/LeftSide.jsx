@@ -11,7 +11,7 @@ const LeftSide = () => {
           <hr className={styles.lineRight} />
         </div>
         <h1>Victoria</h1>
-        <h4>22.09.2024</h4>
+        <h4>26.06.2026</h4>
       </div>
     </div>
   )

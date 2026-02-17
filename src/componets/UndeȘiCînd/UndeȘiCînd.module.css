@@ -1,22 +1,23 @@
+.sectionBg {
+  width: 100%;
+  background: #556832; /* цвет по бокам */
+  padding: 80px 0;
+}
 .container {
   width: 100%;
-  padding: 90px 20px;
-  max-width: 1200px;
+  background: #ffffff;
   margin: 0 auto;
+  max-width: 1280px;
+  background-image: url('../../assets/images/img3.jpg'); /* путь к картинке */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
 }
 
 .header {
   text-align: center;
   margin-bottom: 40px;
-}
-
-.meta {
-  color: #c5a47e;
-  font-size: 14px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: 10px;
 }
 
 .title {
