@@ -14,7 +14,7 @@
 .contentWrapper {
   max-width: 900px;
   width: 100%;
-  padding: 50px 40px;
+  padding: 25px 40px;
   max-width: 1280px;
   background-image: url('../../assets/images/img3.jpg'); /* путь к картинке */
   background-size: cover;
@@ -24,10 +24,25 @@
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
   font-size: 2.5rem;
   color: #556832;
-  text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 5px;
+  font-family: 'Cardo', serif;
+}
+
+.header::before,
+.header::after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url('../../assets/images/img4.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 28px;
 }
 
 .form {

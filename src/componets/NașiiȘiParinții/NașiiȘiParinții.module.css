@@ -18,10 +18,25 @@
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
   font-size: 2.5rem;
   color: #556832;
-  margin-bottom: 20px;
-  line-height: 1.1;
+  margin-bottom: 5px;
+  font-family: 'Cardo', serif;
+}
+
+.header::before,
+.header::after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url('../../assets/images/img4.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 28px;
 }
 
 .quote {
