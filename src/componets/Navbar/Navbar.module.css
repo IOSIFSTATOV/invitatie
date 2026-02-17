@@ -6,7 +6,7 @@
   margin-left: auto;
   z-index: 2;
   box-shadow: none;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #7b964a;
   position: fixed !important;
 }
 .navContainer {

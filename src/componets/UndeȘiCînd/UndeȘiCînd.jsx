@@ -32,9 +32,9 @@ const UndeȘiCînd = () => {
             <div className={styles.content}>
               <h5>Petrecerea</h5>
               <p className={styles.address}>
-                📍 Restaurantu Kevi'S
+                📍 Kevi's Events Restaurant
                 <br />
-                Poșta Veche Calea orheiului 111/7
+                Poșta Veche, Calea Orheiului, Nr. 111/7
               </p>
               <p className={styles.time}>
                 ⏰ <span>26 May 2026, 18:00</span>

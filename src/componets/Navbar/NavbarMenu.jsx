@@ -48,7 +48,7 @@ const NavbarMenu = () => {
             duration={1000}
             onClick={() => handleMenuItemClick('UndeȘiCînd')}
           >
-            Unde Și Cînd
+            Unde Și Când
           </Link>
         </li>
         <li>

@@ -24,10 +24,10 @@
 }
 
 .header {
-  font-size: 28px;
+  font-size: 2.5rem;
+  color: #556832;
   text-align: center;
   margin-bottom: 40px;
-  font-weight: 600;
 }
 
 .form {
@@ -46,6 +46,9 @@
   flex-direction: column;
   width: 280px;
 }
+.field label {
+  font-size: 1.3rem;
+}
 
 .field input {
   padding: 12px;
@@ -55,7 +58,7 @@
 }
 
 .mainLabel {
-  font-size: 18px;
+  font-size: 1.3rem;
   margin-bottom: 20px;
   display: block;
   text-align: center;
@@ -70,7 +73,7 @@
 
 .cardYes,
 .cardNo {
-  border: 1px solid #eee;
+  border: 1px solid#556832;
   border-radius: 16px;
   padding: 20px;
   width: 320px;
@@ -83,17 +86,15 @@
 }
 
 .yesText {
-  color: #4caf50;
-  font-size: 18px;
+  color: #556832;
+  font-size: 1.3rem;
   margin-left: 10px;
-  font-weight: 600;
 }
 
 .noText {
   color: #f44336;
-  font-size: 18px;
+  font-size: 1.3rem;
   margin-left: 10px;
-  font-weight: 600;
 }
 
 .numbers {
@@ -105,34 +106,40 @@
   width: 100%;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #556832;
 }
 
 .message textarea {
   width: 100%;
   min-height: 90px;
   border-radius: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #556832;
   padding: 10px;
   margin-top: 8px;
 }
 .submitBtnWrapper {
   text-align: center;
 }
+.recurs h3 {
+  margin: 10px;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #556832;
+}
 
 .submitBtn {
   width: 30%;
   margin-top: 30px;
   padding: 16px;
-  font-size: 18px;
+  font-size: 1.5rem;
   border-radius: 14px;
   border: none;
-  background: black;
+  background: #556832;
   color: white;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .submitBtn:hover {
-  background: #333;
+  background: #7a9448;
 }

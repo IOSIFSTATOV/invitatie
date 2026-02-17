@@ -10,24 +10,24 @@
   text-align: center;
   font-family: 'Cormorant', serif;
   color: #272727;
-  margin-top: 90px;
+  margin-top: 20px;
   z-index: 1;
   position: relative;
   margin-bottom: 20px;
 }
-.contextWrapper > h5 {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 4px;
-  letter-spacing: 0.5px;
-  font-family: 'Hind', sans-serif;
+
+.contextWrapper > h1 {
+  font-size: 3rem;
 }
+
 .contextWrapper > h5 {
-  font-size: 1.7rem;
-  font-family: 'Cormorant', serif;
-  font-weight: 700;
-  margin: 10px 0;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  font-size: 2.5rem;
+  color: #556832;
+  font-family: 'Cardo', serif;
+  font-weight: 600;
+  margin: 20px 0;
 }
 .andSymbol {
   display: flex;
@@ -43,12 +43,12 @@
 .lineRight {
   width: 50px;
   border: none;
-  border-top: 2px solid #272727;
+  border-top: 2px solid #556832;
 }
 
 .andSymbol span {
   font-size: 2rem;
-  color: #c47c5d;
+  color: #556832;
   margin: 0 10px;
 }
 
@@ -58,9 +58,10 @@
 
 .contextWrapper > h4 {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.3rem;
   line-height: 20px;
+  margin-top: 15px;
   margin-bottom: 4px;
   letter-spacing: 0.5px;
-  font-family: 'Hind', sans-serif;
+  font-family: 'Cardo', serif;
 }
