@@ -1,18 +1,11 @@
+import rightImg from '../../assets/images/img1.jpg'
+
 import styles from './LeftSide.module.css'
+
 const LeftSide = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.contextWrapper}>
-        <h5>NE CĂSĂTORIM!</h5>
-        <h1>Trofim</h1>
-        <div className={styles.andSymbol}>
-          <hr className={styles.lineLeft} />
-          <span>&</span>
-          <hr className={styles.lineRight} />
-        </div>
-        <h1>Victoria</h1>
-        <h4>26.06.2026</h4>
-      </div>
+      <img src={rightImg} alt="Imagine dreapta" />
     </div>
   )
 }

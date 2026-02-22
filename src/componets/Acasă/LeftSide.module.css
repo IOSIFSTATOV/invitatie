@@ -1,119 +1,31 @@
 .container {
   flex: 1;
-  background: url('../../assets/images/img1.jpg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-}
-.contextWrapper {
-  text-align: center;
-  font-family: 'Cormorant', serif;
-  color: #272727;
-  margin-top: 190px;
-  margin-left: 30px;
-  margin-bottom: 20px;
-  z-index: 1;
-  position: relative;
+  background-color: #f0f0f0;
 }
 
-.contextWrapper > h1 {
-  font-size: 3rem;
-}
-
-.contextWrapper > h5 {
-  line-height: 20px;
-  letter-spacing: 0.5px;
-  font-size: 2.5rem;
-  color: #556832;
-  font-family: 'Cardo', serif;
-  font-weight: 600;
-  margin: 20px 0;
-}
-.andSymbol {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px 0;
-}
-.andSymbol > .lineLeft {
-  margin-right: 10px;
-}
-
-.lineLeft,
-.lineRight {
-  width: 50px;
-  border: none;
-  border-top: 2px solid #556832;
-}
-
-.andSymbol span {
-  font-size: 2rem;
-  color: #556832;
-  margin: 0 10px;
-}
-
-.andSymbol > .lineRight {
-  margin-left: 10px;
-}
-
-.contextWrapper > h4 {
-  font-weight: 500;
-  font-size: 1.3rem;
-  line-height: 20px;
-  margin-top: 15px;
-  margin-bottom: 4px;
-  letter-spacing: 0.5px;
-  font-family: 'Cardo', serif;
+.container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Планшет */
+@media (max-width: 1024px) {
+  .container {
+    min-height: 60vh;
+  }
+}
 
 /* Телефон */
 @media (max-width: 768px) {
   .container {
-    min-height: 80vh;
-    padding: 10px;
-
-    justify-content: center;
-    align-items: flex-end;
+    min-height: 50vh;
   }
 
-  .contextWrapper {
-    margin-bottom: 70px; /* регулируешь насколько ниже */
-    margin-top: 0px;
-    margin-left: 20px;
-    padding-top: 30px;
-  }
-
-  .contextWrapper > h1 {
-    font-size: 1.7rem;
-  }
-
-  .contextWrapper > h5 {
-    font-size: 1.4rem;
-    margin: 5px 0;
-  }
-
-  .contextWrapper > h4 {
-    font-size: 0.95rem;
-    margin-top: 5px;
-    margin-bottom: 4px;
-  }
-  .andSymbol {
-    margin: 5px 0;
-  }
-
-  .andSymbol span {
-    font-size: 1.3rem;
-  }
-
-  .lineLeft,
-  .lineRight {
-    width: 30px;
-  }
-  hr {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+  .container > img {
+    height: 100%;
   }
 }
