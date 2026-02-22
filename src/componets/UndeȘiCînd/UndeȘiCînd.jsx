@@ -34,7 +34,7 @@ const UndeȘiCînd = () => {
               <p className={styles.address}>
                 📍 Kevi's Events Restaurant
                 <br />
-                Poșta Veche, str.Calea Orheiului, Nr. 111/7
+                Poșta Veche, str. Calea Orheiului, Nr. 111/7
               </p>
               <p className={styles.time}>
                 ⏰ <span>26 May 2026, 17:00</span>
