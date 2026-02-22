@@ -3,6 +3,8 @@ import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 
 const Confirmare = () => {
+  const [success, setSuccess] = useState(false)
+  const [error, setError] = useState(false)
   const [form, setForm] = useState({
     name: '',
     phone: '',
@@ -19,6 +21,7 @@ const Confirmare = () => {
 
   const sendEmail = async (e) => {
     e.preventDefault()
+
     try {
       await emailjs.send(
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
@@ -26,7 +29,10 @@ const Confirmare = () => {
         { ...form },
         process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
       )
-      alert('Confirmarea a fost trimisă ❤️')
+
+      setSuccess(true)
+      setError(false)
+
       setForm({
         name: '',
         phone: '',
@@ -35,8 +41,12 @@ const Confirmare = () => {
         kids: '',
         message: '',
       })
+
+      setTimeout(() => setSuccess(false), 4000)
     } catch {
-      alert('Eroare la trimitere ❌')
+      setError(true)
+      setSuccess(false)
+      setTimeout(() => setError(false), 4000)
     }
   }
 
@@ -171,6 +181,17 @@ const Confirmare = () => {
           </form>
         </div>
       </div>
+      {success && (
+        <div className={`${styles.toast} ${styles.toastSuccess}`}>
+          Confirmarea a fost trimisă ❤️
+        </div>
+      )}
+
+      {error && (
+        <div className={`${styles.toast} ${styles.toastError}`}>
+          Eroare la trimitere ❌
+        </div>
+      )}
     </section>
   )
 }
