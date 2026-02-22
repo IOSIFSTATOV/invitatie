@@ -85,7 +85,7 @@
 @media (max-width: 768px) {
   .contentWrapper {
     flex-direction: column;
-    padding: 20px;
+    padding: 0px;
     gap: 40px;
   }
 
@@ -94,7 +94,7 @@
   }
 
   .block h2 {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     gap: 10px;
   }
 
@@ -105,13 +105,6 @@
   .block p {
     font-size: 0.9rem;
     line-height: 1.4rem;
-  }
-
-  .block h2::before,
-  .block h2::after {
-    width: 25px;
-    height: 25px;
-    margin-top: 0;
   }
 
   .blockImage {

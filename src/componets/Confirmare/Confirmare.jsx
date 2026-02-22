@@ -44,7 +44,7 @@ const Confirmare = () => {
     <section className={styles.sectionBg}>
       <div className={styles.container}>
         <div className={styles.contentWrapper}>
-          <div className={styles.header}>Vă rugăm să confirmați prezența</div>
+          <h2 className={styles.header}>Vă rugăm să confirmați prezența</h2>
 
           <form className={styles.form} onSubmit={sendEmail}>
             <div className={styles.row}>

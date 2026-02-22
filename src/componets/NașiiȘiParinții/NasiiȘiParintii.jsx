@@ -4,7 +4,7 @@ const NașiiȘiParinții = () => {
   return (
     <section className={styles.sectionBg}>
       <div className={styles.container}>
-        <div className={styles.header}>Cu drag, alături de noi</div>
+        <h2 className={styles.header}>Cu drag, alături de noi</h2>
         <div className={styles.quote}>
           „Nimic nu ar fi la fel fără oamenii care ne-au ghidat, susținut și
           iubit.”

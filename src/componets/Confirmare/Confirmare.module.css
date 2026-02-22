@@ -12,9 +12,8 @@
 }
 
 .contentWrapper {
-  max-width: 900px;
   width: 100%;
-  padding: 25px 40px;
+  padding: 25px 0px;
   max-width: 1280px;
   background-image: url('../../assets/images/img3.jpg'); /* путь к картинке */
   background-size: cover;
@@ -24,6 +23,7 @@
 }
 
 .header {
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,4 +160,55 @@
 
 .submitBtn:hover {
   background: #7a9448;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 60px 0px;
+  }
+  .contentWrapper {
+    padding-top: 0;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .field {
+    width: 95%;
+  }
+
+  .field input {
+    width: 100%;
+  }
+
+  .presenceRow {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cardYes,
+  .cardNo {
+    width: 100%;
+  }
+
+  .numbers {
+    flex-direction: column;
+  }
+
+  .submitBtn {
+    width: 50%;
+    font-size: 1.2rem;
+    padding: 14px;
+  }
+
+  .recurs p {
+    font-size: 1.1rem;
+  }
+
+  .yesText,
+  .noText {
+    font-size: 1.1rem;
+  }
 }
