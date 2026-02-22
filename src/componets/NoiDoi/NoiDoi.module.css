@@ -81,3 +81,41 @@
   border-radius: 25px;
   background-color: #f5f5f5; /* если фото не занимает весь блок */
 }
+
+@media (max-width: 768px) {
+  .contentWrapper {
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px;
+  }
+
+  .block {
+    width: 100%;
+  }
+
+  .block h2 {
+    font-size: 1.6rem;
+    gap: 10px;
+  }
+
+  .block h3 {
+    font-size: 1.1rem;
+  }
+
+  .block p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .block h2::before,
+  .block h2::after {
+    width: 25px;
+    height: 25px;
+    margin-top: 0;
+  }
+
+  .blockImage {
+    height: auto;
+    margin-top: 15px;
+  }
+}

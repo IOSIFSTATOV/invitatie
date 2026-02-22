@@ -11,3 +11,21 @@
   height: 100%;
   object-fit: cover;
 }
+
+/* Планшет */
+@media (max-width: 1024px) {
+  .container {
+    min-height: 60vh;
+  }
+}
+
+/* Телефон */
+@media (max-width: 768px) {
+  .container {
+    min-height: 50vh;
+  }
+
+  .container > img {
+    height: 100%;
+  }
+}

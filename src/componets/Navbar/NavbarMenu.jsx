@@ -2,20 +2,23 @@ import { Link } from 'react-scroll'
 
 import styles from './NavbarMenu.module.css'
 
-const NavbarMenu = () => {
+const NavbarMenu = ({ open, setOpen }) => {
   const handleMenuItemClick = (section) => {
     window.history.pushState(null, '', `#${section}`)
   }
 
   return (
     <div className={styles.container}>
-      <ul className={styles.menu}>
+      <ul className={`${styles.menu} ${open ? styles.open : ''}`}>
         <li>
           <Link
             to="Acasă"
             smooth
             duration={700}
-            onClick={() => handleMenuItemClick('Acasă')}
+            onClick={() => {
+              handleMenuItemClick('Acasă')
+              setOpen(false)
+            }}
           >
             Acasă
           </Link>
@@ -25,7 +28,10 @@ const NavbarMenu = () => {
             to="NașiiȘiParinții"
             smooth
             duration={1000}
-            onClick={() => handleMenuItemClick('NașiiȘiParinții')}
+            onClick={() => {
+              handleMenuItemClick('NașiiȘiParinții')
+              setOpen(false)
+            }}
           >
             Nașii Și Parinții
           </Link>
@@ -35,7 +41,10 @@ const NavbarMenu = () => {
             to="NoiDoi"
             smooth
             duration={1000}
-            onClick={() => handleMenuItemClick('NoiDoi')}
+            onClick={() => {
+              handleMenuItemClick('NoiDoi')
+              setOpen(false)
+            }}
           >
             Noi Doi
           </Link>
@@ -46,7 +55,10 @@ const NavbarMenu = () => {
             to="UndeȘiCînd"
             smooth
             duration={1000}
-            onClick={() => handleMenuItemClick('UndeȘiCînd')}
+            onClick={() => {
+              handleMenuItemClick('UndeȘiCînd')
+              setOpen(false)
+            }}
           >
             Unde Și Când
           </Link>
@@ -56,7 +68,10 @@ const NavbarMenu = () => {
             to="Confirmare"
             smooth
             duration={1000}
-            onClick={() => handleMenuItemClick('Confirmare')}
+            onClick={() => {
+              handleMenuItemClick('Confirmare')
+              setOpen(false)
+            }}
           >
             Confirmare
           </Link>

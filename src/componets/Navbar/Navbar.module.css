@@ -1,24 +1,102 @@
 .container {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  z-index: 2;
-  box-shadow: none;
-  background-color: #7b964a;
-  position: fixed !important;
+  background: #7b964a;
+  z-index: 1000;
 }
-.navContainer {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+
+.navigation {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
-.nav {
-  position: relative;
-  align-items: center !important;
-  flex-direction: row !important;
-  display: flex !important;
+
+/* desktop menu */
+.menu ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  opacity: 0.7;
+}
+
+/* burger */
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.burger span {
+  width: 25px;
+  height: 2px;
+  background: white;
+  transition: 0.3s;
+}
+
+/* animation */
+.burger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.burger.active span:nth-child(2) {
+  opacity: 0;
+}
+.burger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .navigation {
+    justify-content: space-between;
+  }
+  .burger {
+    display: flex;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    max-width: 320px;
+    height: 100vh;
+    background: #7b964a;
+    padding-top: 100px;
+    transition: 0.4s;
+  }
+
+  .menu.open {
+    right: 0;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .menu a {
+    font-size: 18px;
+  }
 }

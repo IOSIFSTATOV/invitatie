@@ -157,11 +157,11 @@ const Confirmare = () => {
               </div>
             </div>
             <div className={styles.recurs}>
-              <h3>
+              <p>
                 PS. Vă vom fi recunoscători dacă tradiționalul buchet de flori
-                va fi înlocuit cu un cadou simbolic în semn de
-                recunoștință.{' '}
-              </h3>
+                <br />
+                va fi înlocuit cu un cadou simbolic în semn de recunoștință.
+              </p>
             </div>
             <div className={styles.submitBtnWrapper}>
               <button type="submit" className={styles.submitBtn}>

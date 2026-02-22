@@ -10,10 +10,11 @@
   text-align: center;
   font-family: 'Cormorant', serif;
   color: #272727;
-  margin-top: 20px;
+  margin-top: 190px;
+  margin-left: 30px;
+  margin-bottom: 20px;
   z-index: 1;
   position: relative;
-  margin-bottom: 20px;
 }
 
 .contextWrapper > h1 {
@@ -64,4 +65,55 @@
   margin-bottom: 4px;
   letter-spacing: 0.5px;
   font-family: 'Cardo', serif;
+}
+
+/* Планшет */
+
+/* Телефон */
+@media (max-width: 768px) {
+  .container {
+    min-height: 80vh;
+    padding: 10px;
+
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .contextWrapper {
+    margin-bottom: 70px; /* регулируешь насколько ниже */
+    margin-top: 0px;
+    margin-left: 20px;
+    padding-top: 30px;
+  }
+
+  .contextWrapper > h1 {
+    font-size: 1.7rem;
+  }
+
+  .contextWrapper > h5 {
+    font-size: 1.4rem;
+    margin: 5px 0;
+  }
+
+  .contextWrapper > h4 {
+    font-size: 0.95rem;
+    margin-top: 5px;
+    margin-bottom: 4px;
+  }
+  .andSymbol {
+    margin: 5px 0;
+  }
+
+  .andSymbol span {
+    font-size: 1.3rem;
+  }
+
+  .lineLeft,
+  .lineRight {
+    width: 30px;
+  }
+  hr {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
 }

@@ -35,3 +35,44 @@
   background-color: #7a9448;
   opacity: 0.2;
 }
+
+/* десктоп как был */
+.menu {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+/* 📱 мобильный режим */
+@media (max-width: 768px) {
+  .menu {
+    font-size: 1rem;
+    position: fixed;
+    top: 30px;
+    left: -100%;
+    width: 50%;
+    height: calc(100vh - 30px);
+    background: #7b964a;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.4s;
+  }
+
+  .menu.open {
+    left: 0;
+  }
+
+  .menu > li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .menu li a {
+    font-size: 1rem;
+    height: auto;
+    line-height: normal;
+    color: white;
+  }
+}

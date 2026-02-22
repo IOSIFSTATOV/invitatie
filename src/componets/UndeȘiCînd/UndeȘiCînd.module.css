@@ -111,21 +111,12 @@
 }
 
 /* responsive */
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
+  .sectionBg {
+    padding: 60px 0;
+  }
   .grid {
     flex-direction: column;
     height: auto; /* убираем ограничение по высоте */
-  }
-  .mapWrapper {
-    height: 300px;
-  }
-  .card {
-    height: auto;
-  }
-}
-
-@media (max-width: 650px) {
-  .title {
-    font-size: 32px;
   }
 }
